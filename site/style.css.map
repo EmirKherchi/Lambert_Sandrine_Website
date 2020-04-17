@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["src/sass/main.scss","src/sass/utils/_variables.scss"],"names":[],"mappings":"AAEA;EACE,OCCM;EDAN;;;AAIF;EACE;EACA;;AACA;EACE;;AAEF;EACE;EACA;;AAEF;EACE;;AACA;EACE;EACA;;AACA;EACE;;;AAQR;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE,OCtCG;EDuCH;;AAEF;AAAA;AAAA;AAAA;EAIE;EACA;EACA;;AAEF;EACE,kBCjDI;EDkDJ,OCnDG;EDoDH;EACA;EACA;EACA;EACA;EACA;;AACA;EACE,kBC3DC;ED4DD,OC3DE;ED4DF","file":"style.css"}
