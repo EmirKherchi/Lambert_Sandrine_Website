@@ -1,0 +1,24 @@
+footer{
+    background-color: $black;
+    padding: 2% 0;
+    
+    .navbar{
+        background-color: $black;
+        &-brand{
+            color: $grey;
+            &:hover{
+                color: $grey;
+            }
+        }
+       .nav{
+           &-item{
+              margin: 0px 50px; 
+           }
+           &-link{
+            color: $grey;
+            width: 200px ;
+            
+           }
+       }
+    }
+}

@@ -1,0 +1,24 @@
+
+@mixin square($color,$btnMargin) {
+    background-color: $color;
+          border-radius: 4px;
+          padding: 10% 5%;
+          border: 40px solid #fff;
+           
+       &_title{
+           margin-bottom: 20%;
+           font-weight: 600;
+       }
+       &_text{
+        margin-bottom: 15%;
+    }
+       &_images{
+           margin-bottom: $btnMargin;
+       }
+}
+
+
+
+
+
+

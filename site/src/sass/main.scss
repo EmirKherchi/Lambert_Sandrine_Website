@@ -1,68 +1,13 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 
-body {
-  color: $black;
-  font-family: "Open Sans", sans-serif;
-}
-//header
+@import "./base/body";
 
-.navbar {
-  background-color: #fff;
-  padding: 2% 0px;
-  &-collapse {
-    margin-right: 10%;
-  }
-  &-brand {
-    font-weight: 600;
-    margin: 0px 10%;
-  }
-  ul {
-    margin-left: 25%;
-    li {
-      font-size: 20px;
-      width: 8rem;
-      &:hover {
-        font-weight: 600;
-      }
-    }
-  }
-}
+@import "./component/square";
+@import "./component/homeimage";
 
-//home - main image
+@import "./layout/header";
+@import "./layout/footer";
 
-.bandeau {
-  margin-top: 25px;
-  padding: 0;
-  background-image: url("src/images/main_image_fond.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  height: 1000px;
-  &-text {
-    color: $grey;
-    padding-top: 15%;
-  }
-  &,
-  h1,
-  h2,
-  h3 {
-    padding-bottom: 2%;
-    font-weight: 700;
-    text-shadow: 2px 2px 0px #222;
-  }
-  &-btn {
-    background-color: $black;
-    color: $grey;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 10px 25px;
-    text-shadow: none;
-    border: none;
-    margin-top: 20px;
-    &:hover {
-      background-color: $grey;
-      color: $black;
-      transition: 500ms ease;
-    }
-  }
-}
+
+
