@@ -4,6 +4,9 @@ header {
   width: 100%;
   z-index: 1000;
   box-shadow: 1px 1px 10px lighten($color: $black, $amount: 40%);
+  @include sm {
+    position: relative;
+  }
 }
 
 .navbar {
@@ -17,27 +20,22 @@ header {
     font-weight: 600;
     margin: 0px 10%;
     color: $black;
-    &:hover{
+    &:hover {
       color: $black;
     }
   }
-  .active{
+  .active {
     font-weight: 600;
   }
-  .nav-link {
-      color:$black;
-  }
-
   ul {
     margin-left: 25%;
     li {
       font-size: 18px;
-
       width: 8rem;
-      a:hover{
+
+      a:hover {
         font-weight: 600;
       }
     }
-
   }
 }

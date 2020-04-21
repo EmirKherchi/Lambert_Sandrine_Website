@@ -1,11 +1,13 @@
 .bandeau {
-  margin-top: 25px;
   padding: 0;
   background-image: url("src/images/main_image_fond.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
   height: 900px;
+  @include sm{
+    height: 500px;
+  }
   &-text {
     color: $grey;
     padding-top: 15%;

@@ -1,3 +1,4 @@
+/* bearkpoint */
 body {
   color: #222;
   font-family: "Open Sans", sans-serif;
@@ -15,10 +16,18 @@ body h3 {
 .square {
   margin-top: 10%;
   margin-bottom: 10%;
+  width: 90%;
+}
+@media (max-width: 576px) {
+  .square {
+    width: 100%;
+    padding: 0;
+  }
 }
 .square .btn-dark {
   color: #efefef;
   background-color: #222;
+  padding: 10px 30px;
 }
 .square .btn-dark:hover {
   background-color: #efefef;
@@ -28,43 +37,65 @@ body h3 {
   background-color: #d6f2ec;
   border-radius: 4px;
   padding: 10% 5%;
-  border: 40px solid #fff;
+  border: 25px solid #fff;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .square-therapies {
+    border: 1px;
+    margin-bottom: 10%;
+    padding: 5%;
+  }
 }
 .square-therapies_title {
   margin-bottom: 20%;
   font-weight: 600;
 }
 .square-therapies_text {
-  margin-bottom: 15%;
+  margin-bottom: 100px;
+  text-align: left;
 }
 .square-therapies_images {
-  margin-bottom: 45px;
+  margin-bottom: 100px;
 }
 .square-apropos {
   background-color: #edf6e3;
   border-radius: 4px;
   padding: 10% 5%;
-  border: 40px solid #fff;
+  border: 25px solid #fff;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .square-apropos {
+    border: 1px;
+    margin-bottom: 10%;
+    padding: 5%;
+  }
 }
 .square-apropos_title {
   margin-bottom: 20%;
   font-weight: 600;
 }
 .square-apropos_text {
-  margin-bottom: 15%;
+  margin-bottom: 100px;
+  text-align: left;
 }
 .square-apropos_images {
-  margin-bottom: 110px;
+  margin-bottom: 100px;
 }
 
 .bandeau {
-  margin-top: 25px;
   padding: 0;
   background-image: url("src/images/main_image_fond.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
   height: 900px;
+}
+@media (max-width: 576px) {
+  .bandeau {
+    height: 500px;
+  }
 }
 .bandeau-text {
   color: #efefef;
@@ -101,6 +132,11 @@ header {
   z-index: 1000;
   box-shadow: 1px 1px 10px #888888;
 }
+@media (max-width: 576px) {
+  header {
+    position: relative;
+  }
+}
 
 .navbar {
   background-color: #fff;
@@ -119,9 +155,6 @@ header {
 }
 .navbar .active {
   font-weight: 600;
-}
-.navbar .nav-link {
-  color: #222;
 }
 .navbar ul {
   margin-left: 25%;
@@ -144,11 +177,22 @@ footer .navbar {
 footer .navbar-brand {
   color: #efefef;
 }
+@media (max-width: 576px) {
+  footer .navbar-brand {
+    display: none;
+  }
+}
 footer .navbar-brand:hover {
   color: #efefef;
 }
 footer .navbar .nav-item {
   margin: 0px 50px;
+}
+@media (max-width: 576px) {
+  footer .navbar .nav-item {
+    margin: 0;
+    text-align: center;
+  }
 }
 footer .navbar .nav-link {
   color: #efefef;

@@ -1,19 +1,27 @@
 .square{
     margin-top: 10%;
     margin-bottom: 10%;
+    width: 90%;
+    @include sm {
+        width: 100%;
+        padding: 0;
+    }
     .btn-dark{
       color: $grey;
       background-color: $black; 
+      padding: 10px 30px;
+      
+
       &:hover{
           background-color: $grey;
           color:$black;
       }
     }
     &-therapies{
-        @include square($blue,45px); 
+        @include square($blue); 
                 
     }
     &-apropos{
-        @include square($green,110px);
+        @include square($green);
     }
 }

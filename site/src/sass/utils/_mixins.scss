@@ -1,24 +1,48 @@
 
-@mixin square($color,$btnMargin) {
+@mixin square($color) {
     background-color: $color;
           border-radius: 4px;
           padding: 10% 5%;
-          border: 40px solid #fff;
+          border: 25px solid #fff;
+          border-radius: 5px;
+          @include sm {
+            border:1px;
+            margin-bottom: 10%;
+            padding: 5%;
+        }
            
        &_title{
            margin-bottom: 20%;
            font-weight: 600;
        }
        &_text{
-        margin-bottom: 15%;
+     
+        margin-bottom: 100px;
+        text-align: left;
     }
        &_images{
-           margin-bottom: $btnMargin;
+           margin-bottom: 100px;
        }
 }
 
 
 
+@mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
 
+// Medium devices
+@mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+}
 
-
+// Large devices
+@mixin lg {
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
