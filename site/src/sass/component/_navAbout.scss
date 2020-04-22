@@ -1,0 +1,29 @@
+.about-nav {
+  margin-top: 15%;
+  margin-bottom: 8%;
+  &bar {
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow: hidden;
+      background-color: $black;
+    }
+
+    li {
+      
+      display: inline-block;
+      
+      padding: 14px 10%;
+      text-decoration: none;
+      color: $grey;
+      cursor: pointer;
+    }
+
+    li:hover {
+      font-weight: 600;
+    }
+  }
+}
