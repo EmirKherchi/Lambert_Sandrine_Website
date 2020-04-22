@@ -13,6 +13,7 @@ function show(display,section){
     display.addEventListener("click",function(){
         for(let i = 0; i < sections.length; i++){
             sections[i].classList.add('off');
+            sections[i].classList.add('on');
         }
         section.classList.remove("off");
     });

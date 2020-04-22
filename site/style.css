@@ -3,6 +3,7 @@ body {
   color: #222;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 body h1 {
   font-size: 35px;
@@ -127,8 +128,8 @@ body h3 {
 }
 
 .about-nav {
-  margin-top: 15%;
-  margin-bottom: 8%;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 .about-navbar ul {
   list-style-type: none;
@@ -152,6 +153,25 @@ body h3 {
 .off {
   position: absolute;
   display: none;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.on {
+  animation-name: animation;
+  -webkit-animation-name: animation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 .about-content {
