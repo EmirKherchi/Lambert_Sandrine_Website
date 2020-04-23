@@ -1,52 +1,68 @@
+@mixin blockTherapies($direction, $bgcolor) {
+  &_title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  &_text {
+    p {
+      padding: $direction;
+      line-height: 20px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    margin-top: 20px;
+  }
+  background-color: $bgcolor;
+}
 
 @mixin square($color) {
-    background-color: $color;
-          border-radius: 4px;
-          padding: 10% 5%;
-          border: 25px solid #fff;
-          border-radius: 5px;
-          @include sm {
-            border:1px;
-            margin-bottom: 10%;
-            padding: 5%;
-        }
-           
-       &_title{
-           margin-bottom: 20%;
-           font-weight: 600;
-       }
-       &_text{
-     
-        margin-bottom: 100px;
-        text-align: left;
-    }
-       &_images{
-           margin-bottom: 100px;
-       }
+  background-color: $color;
+  border-radius: 4px;
+  padding: 10% 5%;
+  border: 25px solid #fff;
+  border-radius: 5px;
+  @include sm {
+    border: 1px;
+    margin-bottom: 10%;
+    padding: 5%;
+  }
+
+  &_title {
+    margin-bottom: 20%;
+    font-weight: 600;
+  }
+  &_text {
+    margin-bottom: 100px;
+    text-align: left;
+  }
+  &_images {
+    margin-bottom: 100px;
+  }
 }
 
 @mixin about($color) {
-    background-color: $color;
-    padding: 12% 5%;
-    box-shadow: -8px 8px 0px 0px rgb(200, 200, 200);
-  }
+  background-color: $color;
+  padding: 12% 5%;
+  box-shadow: -8px 8px 0px 0px rgb(200, 200, 200);
+}
 
 @mixin sm {
-    @media (max-width: #{$screen-sm-min}) {
-        @content;
-    }
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
 }
 
 // Medium devices
 @mixin md {
-    @media (max-width: #{$screen-md-min}) {
-        @content;
-    }
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
 }
 
 // Large devices
 @mixin lg {
-    @media (max-width: #{$screen-lg-min}) {
-        @content;
-    }
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
 }
