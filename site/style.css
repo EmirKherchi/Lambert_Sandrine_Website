@@ -1,7 +1,7 @@
 /* bearkpoint */
 body {
   color: #222;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
@@ -296,6 +296,68 @@ body h3 {
   font-weight: 600;
 }
 
+.contactBlock {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  background-color: #d6f2ec;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .contactBlock-form {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+}
+.contactBlock-form form {
+  margin: auto;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .contactBlock-form form {
+    width: 90%;
+    margin: auto;
+  }
+}
+.contactBlock-form form h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contactBlock-form form .form-group {
+  margin-bottom: 8%;
+}
+.contactBlock-form form .btn-dark {
+  margin-top: 20px;
+  color: #efefef;
+  background-color: #222;
+  padding: 8px 40px;
+}
+.contactBlock-form form .btn-dark:hover {
+  background-color: #efefef;
+  color: #222;
+}
+.contactBlock-adress {
+  margin-top: 60px;
+}
+.contactBlock-adress ul {
+  padding: 0;
+  margin-bottom: 130px;
+}
+.contactBlock-adress ul li {
+  list-style: none;
+}
+.contactBlock-img {
+  margin-top: 80px;
+  padding: 0 70px 0 50px;
+}
+@media (max-width: 768px) {
+  .contactBlock-img {
+    padding: 0 50px;
+    margin: 0;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -331,7 +393,7 @@ header {
   margin-left: 25%;
 }
 .navbar ul li {
-  font-size: 18px;
+  font-size: 16px;
   width: 8rem;
 }
 .navbar ul li a:hover {

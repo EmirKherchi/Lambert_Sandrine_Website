@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandrine Lambert | Psychologue clinicienne Bruz</title>
     <meta name="description"
-        content="Sandrine Lambert psychologue clinicienne à Bruz,proche de Rennes.Thérapie adulte enfant et adolescent. Consultation psychologique individuelle et couple" />
+        content="Sandrine Lambert psychologue clinicienne à Bruz,proche de Rennes.Thérapie enfant enfant et adolescent. Consultation psychologique individuelle et couple" />
     <meta name="robots" content="index" />
     <meta name="keywords" content="psychologue, rennes, bruz" />
     <meta name="Content-Language" content="fr">
@@ -70,13 +70,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="about.html">A propos</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="consultations.html">Thérapies</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -85,67 +85,75 @@
     </header>
 
     <main>
-    
-        <section class="container-fluid block block-adulte">
-            <h1 class="text-center block-adulte_title">Adulte</h1>
+        <div class="contactBlock containeur-fluid">
             <div class="row">
-                <div class="text-left block-adulte_text col-md-12 col-lg-6">
-                    <p>Consultations individuelles pour enfants, adolescents et adultes.</p>
-                        <p>Vous pouvez me contacter pour toutes les difficultés que vous rencontrez (anxiété,
-                        dépression,
-                        stress, angoisse, addiction, deuil, traumatisme, TCA, TOC...)</p>
-                        <p>Prix indicatif : environ 50 euros*</p>
-                        <p>Temps moyen par séance : 30 min (de 45 min à 1h pour le 1er RV)</p>
-                        <p><strong>mardi au samedi sur RV</strong> </p>
-                        ​
+                <div class="contactBlock-form container col-md-12 col-lg-4 col-form-label text-left">
+                    
+                    <form>
+                        <h1>Contactez-moi</h1>
+                        <div class="form-group">
+                            <input required type="text" class="form-control" id="nom" aria-describedby="nom"
+                                placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" class="form-control" id="prenom" aria-describedby="prenom"
+                                placeholder="Prénom">
+                        </div>
+                        <div class="form-group">
+                            <input required type="tel" class="form-control" id="phone" aria-describedby="phone"
+                                placeholder="Téléphone">
+                        </div>
+                        <div class="form-group">
+                            <input required type="email" class="form-control" id="email" aria-describedby="email"
+                                placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"></label>
+                            <textarea required class="form-control" id="message" rows="3" placeholder="Ecrivez votre message"></textarea>
+                          </div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="enfant"
+                                    value="enfant" checked>
+                                <label class="form-check-label" for="enfant">
+                                    Enfant
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="adulte"
+                                    value="adulte">
+                                <label class="form-check-label" for="adulte">
+                                    Adulte
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center"><button type="submit" class="btn btn-dark">Envoyer</button></div>
+                        
+                    </form>
                 </div>
-                <div class="block-adulte_image col-md-12 col-lg-6">
-                    <img class="img-fluid" src="src/images/therapie_alone.png"
-                        alt="illustration consultation thérapie adulte par sandrine lambert psychologue clinicienne à Bruz, Rennes">
+                <div class="contactBlock-adress col-md-12 col-lg-4 text-center">
+                    <ul>
+                        <li><h2>Sandrine Lambert</h2></li>
+                        <li><h2>06 99 42 62 20</h2></li>
+                        <li><h3>6 place Marcel Pagnol</h3></li>
+                        <li><h3>Bruz - 35170</h3></li> 
+                    </ul>
+                    <ul class="contactBlock-adress_horaires">
+                        <li>Lundi: Fermé (sauf urgence)</li>
+                        <li>Mardi: 14h - 20h30 </li>
+                        <li>Mercredi: 11h30 - 17h45</li>
+                        <li>Jeudi: 10h - 20h30</li>
+                        <li>Mercredi: 14h - 17h45</li>
+                        <li>Samedi: 9h - 12h30</li> 
+                    </ul>
+                </div>
+                <div class="contactBlock-img col-md-12 col-lg-4 ">
+                    <img class="img-fluid" src="src/images/espace paramedical.jpg"
+                    alt="Image cabinet sandrine lambert psychologue clinicienne à Bruz, Rennes">
                 </div>
             </div>
-        </section>
-
-        <section class="container-fluid block block-ado">
-            <h1 class="text-center block-ado_title">Adolescent</h1>
-            <div class="row">
-                <div class="block-ado_image col-md-12 col-lg-6">
-                    <img class="img-fluid" src="src/images/therapie_couple.png"
-                        alt="illustration consultation thérapie adolescents par sandrine lambert psychologue clinicienne à Bruz, Rennes">
-                </div>
-                <div class="text-right block-ado_text col-md-12 col-lg-6">
-                    <p>Consultations individuelles pour enfants, adolescents et adultes.</p>
-                        <p>Vous pouvez me contacter pour toutes les difficultés que vous rencontrez (anxiété,
-                        dépression,
-                        stress, angoisse, addiction, deuil, traumatisme, TCA, TOC...)</p>
-                        <p>Prix indicatif : environ 50 euros*</p>
-                        <p>Temps moyen par séance : 30 min (de 45 min à 1h pour le 1er RV)</p>
-                        <p><strong>mardi au samedi sur RV</strong> </p>
-                        ​
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid block block-child">
-            <h1 class="text-center block-child_title">Enfant</h1>
-            <div class="row">
-                <div class="text-left block-child_text col-md-12 col-lg-6">
-                    <p>Consultations individuelles pour enfants, adolescents et adultes.</p>
-                        <p>Vous pouvez me contacter pour toutes les difficultés que vous rencontrez (anxiété,
-                        dépression,
-                        stress, angoisse, addiction, deuil, traumatisme, TCA, TOC...)</p>
-                        <p>Prix indicatif : environ 50 euros*</p>
-                        <p>Temps moyen par séance : 30 min (de 45 min à 1h pour le 1er RV)</p>
-                        <p><strong>mardi au samedi sur RV</strong> </p>
-                        ​
-                </div>
-                <div class="block-child_image col-md-12 col-lg-6">
-                    <img class="img-fluid" src="src/images/therapie_child.png"
-                        alt="illustration consultation thérapie enfants par sandrine lambert psychologue clinicienne à Bruz, Rennes">
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
 
@@ -165,8 +173,8 @@
 
 
 
-    <!--Js compiled and  es5/6 Js transform to old Js-->
 
+    <!--Js compiled and  es5/6 Js transform to old Js-->
     <script src="/polyfill.bundle.js"></script>
     <script src="/app.bundle.js"></script>
 </body>
