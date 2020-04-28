@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="contactBlock-form container col-md-12 col-lg-4 col-form-label text-left">
                     
-                    <form>
+                    <form name="sendMessage">
                         <h1>Contactez-moi</h1>
                         <div class="form-group">
                             <input required type="text" class="form-control" id="nom" aria-describedby="nom"
@@ -113,22 +113,22 @@
                           </div>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="enfant"
-                                    value="enfant" checked>
+                                <input class="form-check-input" type="radio" name="age" id="enfant"
+                                    value="enfant" required>
                                 <label class="form-check-label" for="enfant">
                                     Enfant
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="adulte"
-                                    value="adulte">
+                                <input class="form-check-input" type="radio" name="age" id="adulte"
+                                    value="adulte" required>
                                 <label class="form-check-label" for="adulte">
                                     Adulte
                                 </label>
                             </div>
                         </div>
 
-                        <div class="text-center"><button type="submit" class="btn btn-dark">Envoyer</button></div>
+                        <div class="text-center"><button type="submit" id="sendbtn" class="btn btn-dark">Envoyer</button></div>
                         
                     </form>
                 </div>
