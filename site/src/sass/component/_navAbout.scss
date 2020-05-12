@@ -1,6 +1,6 @@
 .about-nav {
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   &bar {
     
     ul {
@@ -15,7 +15,7 @@
     li {
       
       display: inline-block;
-      
+      letter-spacing: 2px;
       padding: 14px 10%;
       text-decoration: none;
       color: $grey;
@@ -23,7 +23,9 @@
     }
 
     li:hover {
-      font-weight: 600;
+      font-weight: 700;
+      color: #fff;
+      
     }
   }
 }

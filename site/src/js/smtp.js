@@ -39,6 +39,9 @@ var Email = {
   },
 };
 
+
+
+
 const message = document.getElementById("message");
 const name = document.getElementById("nom");
 const firstname = document.getElementById("prenom");
@@ -52,15 +55,14 @@ const regexPhone = /^[0-9]{10}$/;
 
 const btn = document.getElementById("sendbtn");
 
-function thanks() {
+function thanks() { // creation de la div et ajout d'un h2 remerciement
   const thxDiv = document.createElement("div");
-  const contactBlockForm = document.querySelector('.contactBlock-form');
-  thxDiv.innerHTML= "<h2>Votre message est envoyé<br>Merci</h2>";
-  thxDiv.style.textAlign = 'center';
-  thxDiv.style.marginTop = '50px'
-  thxDiv.style.marginBottom = '50px'
-  form.style.display = 'none';
-  
+  const contactBlockForm = document.querySelector(".contactBlock-form");
+  thxDiv.innerHTML = "<h2>Votre message est envoyé<br>Merci</h2>";
+  thxDiv.style.textAlign = "center";
+  thxDiv.style.marginTop = "50px";
+  thxDiv.style.marginBottom = "50px";
+  form.style.display = "none";
   contactBlockForm.appendChild(thxDiv);
 }
 
@@ -83,9 +85,9 @@ function sendEmail() {
           if (checked == undefined || checked == null) {
             alert("Veuillez préciser si vous êtes un adulte ou non");
           } else {
-            age = checked.value;
+            age = checked.value; //si cocher ajout de la valeur à la variable age .
 
-            Email.send({
+            Email.send({ // création du mail. 
               SecureToken: "56be052d-0061-4712-ab5d-449c30d9dade",
               To: "contact@ekherchi.fr",
               From: "contact@ekherchi.fr",
@@ -103,23 +105,15 @@ function sendEmail() {
                 message.value +
                 ", age: " +
                 age,
-            })
+            });
 
             thanks();
-            
-            
-            
-            
-            
-          
           }
         }
       }
     }
   }
 }
-
-
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
