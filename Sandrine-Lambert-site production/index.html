@@ -51,7 +51,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <!--Css compiled-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
 
 </head>
 
@@ -67,10 +67,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="about.html">A propos</a>
                     </li>
                     <li class="nav-item">
@@ -83,51 +83,51 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
-
-        <section class="about-nav">
-            <div class="about-navbar container">
-                <ul>
-                    <li id="study">Diplômes</li>
-                    <li id="skill">Expériences</li>
-                    <li id="certification">Certifications</li>
-                </ul>
+        <section>
+            <div class="bandeau container-fluid">
+                <div class="bandeau-text container">
+                    <h1>Sandrine Lambert</h1>
+                    <h2>Psychologue clinicienne</h2>
+                    <h3>06 99 42 62 20</h3>
+                    <a href="contact.html" class="bandeau-btn btn btn-dark">Contact</a>
+                </div>
             </div>
         </section>
+        <section>
+            <div class="container-fluid text-center square">
+                <div class="row mx-5">
+                    <div class="col-md-12 col-lg-6  square-therapies">
+                        <h3 class="square-therapies_title">Deroulement général des scéances</h3>
+                        <p class="square-therapies_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolores corrupti doloremque vero. Cupiditate
+                            amet enim consectetur? Exercitationem incidunt similique, eveniet in saepe culpa vero
+                            nostrum,
+                            atque, laudantium nisi mollitia provident.
+                        </p>
+                        <img src="src/images/schedule_home.png" class="square-therapies_images img-fluid"
+                            alt="image déroulement des scéances psychologue Sandrine Lambert Bruz"><br>
+                        <a href="consultations.html" class="btn btn-dark square-therapies_btn">Thérapies</a>
+                    </div>
 
-        <section class="about-content container text-center">
-            <div class="about-content_diplomes sections" id="section1">
-                <h1>Diplômes</h1>
-                <div class="about-content_separator"></div>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum in doloribus molestias vero
-                    maxime voluptatem eaque similique sint, eveniet cumque mollitia nihil! Nesciunt, facere incidunt.
-                    Fugiat ut est doloribus?
-                </p>
-                <img class="img-fluid" src="src/images/study_about.png" alt="illustration diplômes sandrine lambert psychologue clinicienne bruz">
-            </div>
-            <div class="about-content_experiences off sections" id="section2">
-                <h1>Expériences</h1>
-                <div class="about-content_separator"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum in doloribus molestias vero
-                    maxime voluptatem eaque similique sint, eveniet cumque mollitia nihil! Nesciunt, facere incidunt.
-                    Fugiat ut est doloribus?
-                </p>
-                <img class="img-fluid" src="src/images/experiences_about.png" alt="illustration expériences sandrine lambert psychologue clinicienne bruz">
-            </div>
-            <div class="about-content_certifications off sections"  id="section3">
-                <h1>Certifications</h1>
-                <div class="about-content_separator"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum in doloribus molestias vero
-                    maxime voluptatem eaque similique sint, eveniet cumque mollitia nihil! Nesciunt, facere incidunt.
-                    Fugiat ut est doloribus?
-                </p>
-                <img class="img-fluid" src="src/images/certification_about.png" alt="illustration certification sandrine lambert psychologue clinicienne bruz">
+                    <div class="col-md-12 col-lg-6 square-apropos">
+                        <h3 class="square-apropos_title">Qui suis-je</h3>
+                        <p class="square-apropos_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolores corrupti doloremque vero. Cupiditate
+                            amet enim consectetur? Exercitationem incidunt similique, eveniet in saepe culpa vero
+                            nostrum,
+                            atque, laudantium nisi mollitia provident.
+                        </p>
+                        <img src="src/images/description_home.png" class="square-apropos_images img-fluid"
+                            alt="image description psychologue Sandrine Lambert Bruz"><br>
+                        <a href="about.html" class="btn btn-dark square-apropos_btn">A propos</a>
+                        
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
-
 
     <footer class="container-fluid">
         <nav class="navbar navbar-expand-lg ">
@@ -145,8 +145,8 @@
 
 
 
-   <script src="src/js/about.js"></script>
 
+   
 </body>
 
 </html>
