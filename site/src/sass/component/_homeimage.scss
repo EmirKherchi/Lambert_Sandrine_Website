@@ -1,10 +1,10 @@
 .bandeau {
   padding: 0;
-  background-image: url("src/images/main_image_fond_3win.jpg");
+  background-image: url("src/images/main_image_fond_1win.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 900px;
+  height: 1000px;
   @include sm{
     height: 500px;
   }
