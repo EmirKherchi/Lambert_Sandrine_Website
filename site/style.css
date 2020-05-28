@@ -103,6 +103,9 @@ body h3 {
   color: #efefef;
   padding-top: 15%;
 }
+.bandeau .tel {
+  color: #efefef;
+}
 .bandeau,
 .bandeau h1,
 .bandeau h2,
@@ -351,6 +354,9 @@ body h3 {
 }
 .contactBlock-adress {
   margin-top: 60px;
+}
+.contactBlock-adress .tel {
+  color: #222;
 }
 .contactBlock-adress_horaires {
   text-align: justify;
