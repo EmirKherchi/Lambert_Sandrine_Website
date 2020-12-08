@@ -88,9 +88,9 @@ function sendEmail() {
             age = checked.value; //si cocher ajout de la valeur à la variable age .
 
             Email.send({ // création du mail. 
-              SecureToken: "56be052d-0061-4712-ab5d-449c30d9dade",
-              To: "contact@ekherchi.fr",
-              From: "contact@ekherchi.fr",
+              SecureToken: "1c56f64d-33f1-47b8-b43a-fb2f61c9eac9",
+              To: "ekherchi@gmail.com",
+              From: "ekherchi@gmail.com",
               Subject: "Un message du site internet Sandrine Lambert",
               Body:
                 "prénom: " +
