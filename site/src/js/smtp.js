@@ -1,46 +1,4 @@
-﻿/* SmtpJS.com - v3.0.0 */
-var Email = {
-  send: function (a) {
-    return new Promise(function (n, e) {
-      (a.nocache = Math.floor(1e6 * Math.random() + 1)), (a.Action = "Send");
-      var t = JSON.stringify(a);
-      Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) {
-        n(e);
-      });
-    });
-  },
-  ajaxPost: function (e, n, t) {
-    var a = Email.createCORSRequest("POST", e);
-    a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"),
-      (a.onload = function () {
-        var e = a.responseText;
-        null != t && t(e);
-      }),
-      a.send(n);
-  },
-  ajax: function (e, n) {
-    var t = Email.createCORSRequest("GET", e);
-    (t.onload = function () {
-      var e = t.responseText;
-      null != n && n(e);
-    }),
-      t.send();
-  },
-  createCORSRequest: function (e, n) {
-    var t = new XMLHttpRequest();
-    return (
-      "withCredentials" in t
-        ? t.open(e, n, !0)
-        : "undefined" != typeof XDomainRequest
-        ? (t = new XDomainRequest()).open(e, n)
-        : (t = null),
-      t
-    );
-  },
-};
-
-
-
+﻿
 
 const message = document.getElementById("message");
 const name = document.getElementById("nom");
@@ -55,7 +13,8 @@ const regexPhone = /^[0-9]{10}$/;
 
 const btn = document.getElementById("sendbtn");
 
-function thanks() { // creation de la div et ajout d'un h2 remerciement
+function thanks() {
+  // creation de la div et ajout d'un h2 remerciement
   const thxDiv = document.createElement("div");
   const contactBlockForm = document.querySelector(".contactBlock-form");
   thxDiv.innerHTML = "<h2>Votre message est envoyé<br>Merci</h2>";
@@ -87,27 +46,27 @@ function sendEmail() {
           } else {
             age = checked.value; //si cocher ajout de la valeur à la variable age .
 
-            Email.send({ // création du mail. 
-              SecureToken: "1c56f64d-33f1-47b8-b43a-fb2f61c9eac9",
-              To: "ekherchi@gmail.com",
-              From: "ekherchi@gmail.com",
-              Subject: "Un message du site internet Sandrine Lambert",
-              Body:
-                "prénom: " +
-                firstname.value +
-                ", nom: " +
-                name.value +
-                ", téléphone: " +
-                phone.value +
-                ", email: " +
-                email.value +
-                ", message: " +
-                message.value +
-                ", age: " +
-                age,
-            });
+            const form = {
+              firstname : firstname.value,
+              name: name.value,
+              phone: phone.value,
+              email: email.value,
+              age: age,
+              message: message.value
+            }
 
-            thanks();
+            emailjs
+              .send("site_email","siteemail",form,"user_G7KIV6oN96ksI8HoFjWqM")
+              .then(
+                function () {
+                  thanks();
+                },
+                function (error) {
+                  console.log("FAILED...", error);
+                }
+              );
+
+            
           }
         }
       }
