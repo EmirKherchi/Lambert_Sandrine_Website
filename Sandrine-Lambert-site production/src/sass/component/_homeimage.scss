@@ -1,0 +1,41 @@
+.bandeau {
+  padding: 0;
+  background-image: url("src/images/main_image_fond_1win.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 1000px;
+  @include sm{
+    height: 500px;
+  }
+  &-text {
+    color: $grey;
+    padding-top: 15%;
+  }
+  .tel{
+    color: $grey;
+  }
+  &,
+  h1,
+  h2,
+  h3 {
+    padding-bottom: 2%;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #222;
+  }
+  &-btn {
+    background-color: $black;
+    color: $grey;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-shadow: none;
+    border: none;
+    margin-top: 20px;
+    &:hover {
+      background-color: $grey;
+      color: $black;
+      transition: 500ms ease;
+    }
+  }
+}

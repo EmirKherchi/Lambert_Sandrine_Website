@@ -51,7 +51,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <!--Css compiled-->
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -70,9 +70,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="about.html">A propos</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="consultations.html">Thérapies</a>
                     </li>
@@ -136,10 +136,10 @@
                         
                     </form>
                 </div>
-                <div class="contactBlock-adress col-md-12 col-lg-4 text-center">
+                <address class="contactBlock-adress col-md-12 col-lg-4 text-center">
                     <ul>
                         <li><h2>Sandrine Lambert</h2></li>
-                        <li><h2>06 99 42 62 20</h2></li>
+                        <li><h2><a class="tel" href="tel:+33699426220">06 99 42 62 20</a></h2></li>
                         <li><h3>6 place Marcel Pagnol</h3></li>
                         <li><h3>35170 - Bruz</h3></li> 
                     </ul>
@@ -152,7 +152,7 @@
                         <li>Mercredi: 14h - 17h45</li>
                         <li>Samedi: 9h - 12h30</li> 
                     </ul>
-                </div>
+                </address>
                 <div class="contactBlock-img col-md-12 col-lg-4 ">
                     <img class="img-fluid" src="src/images/espace paramedical.jpg"
                     alt="Image cabinet sandrine lambert psychologue clinicienne à Bruz, Rennes">
@@ -176,9 +176,11 @@
     </footer>
 
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
 
-
-    <script src="src/js/smtp.min.js"></script>
+    <script src="src/js/smtp.js"></script>
 
 </body>
 

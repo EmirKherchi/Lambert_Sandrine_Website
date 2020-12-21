@@ -1,0 +1,41 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 1px 1px 10px lighten($color: $black, $amount: 40%);
+  @include sm {
+    position: relative;
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 2% 0px;
+
+  &-collapse {
+    margin-right: 10%;
+  }
+  &-brand {
+    font-weight: 600;
+    margin: 0px 10%;
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+  .active {
+    font-weight: 600;
+  }
+  ul {
+    margin-left: 25%;
+    li {
+      font-size: 16px;
+      width: 8rem;
+
+      a:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}

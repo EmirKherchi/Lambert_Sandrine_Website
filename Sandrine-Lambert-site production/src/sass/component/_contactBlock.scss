@@ -1,0 +1,78 @@
+.contactBlock {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  background-color: $blue;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow: hidden;
+  &-form {
+    @include md {
+      margin-bottom: 100px;
+      margin-top: 100px;
+    }
+    form {
+      margin: auto;
+      width: 70%;
+      @include md {
+        width: 90%;
+        margin: auto;
+      }
+      h1{
+          font-size: 30px;
+          margin-bottom: 30px;
+          text-align: center;
+          @include md{
+            font-size: 20px;
+          }
+      }
+      .form-group {
+        label{
+          margin-left : 12px;
+          font-size: 14px;
+        }
+        margin-bottom: 5%;
+      }
+      .btn-dark {
+        margin-top: 20px;
+        color: $grey;
+        background-color: $black;
+        padding: 8px 40px;
+
+        &:hover {
+          background-color: $grey;
+          color: $black;
+        }
+      }
+    }
+  }
+  &-adress {
+      margin-top: 60px;
+      .tel{
+        color: $black;
+      }
+      &_horaires{
+        h3{
+          margin-bottom: 20px;
+        }
+        text-align: justify;
+        display: block;
+        margin: auto;
+        width: 225px;
+      }
+    ul {
+      padding: 0;
+      margin-bottom: 130px;
+      li {
+        list-style: none;
+      }
+    }
+  }
+  &-img {
+    margin-top: 80px;
+    padding: 0 70px 0 50px;
+    @include md {
+    padding: 0 50px;
+      margin: 0;
+    }
+  }
+}

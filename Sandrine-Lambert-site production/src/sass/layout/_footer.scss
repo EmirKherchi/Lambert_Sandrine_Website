@@ -1,0 +1,32 @@
+footer{
+    background-color: $black;
+    padding: 2% 0;
+    
+    
+    .navbar{
+        background-color: $black;
+        &-brand{
+            color: $grey;
+            @include sm{
+                display: none;
+            }
+            &:hover{
+                color: $grey;
+            }
+        }
+       .nav{
+           &-item{
+              margin: 0px 50px; 
+              @include sm{
+                margin: 0;
+                text-align: center;
+            }
+           }
+           &-link{
+            color: $grey;
+            width: 200px ;
+            
+           }
+       }
+    }
+}

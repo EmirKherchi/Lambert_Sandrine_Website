@@ -1,0 +1,14 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/body";
+
+@import "./component/square";
+@import "./component/homeimage";
+@import "./component/navAbout";
+@import "./component/contentAbout";
+@import "./component/blockConsult";
+@import "./component/contactBlock";
+
+@import "./layout/header";
+@import "./layout/footer";

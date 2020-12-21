@@ -1,0 +1,37 @@
+.block {
+  &-adulte {
+    @include blockTherapies(0 0 0 10%, $blue);
+    &_image {
+      position: relative;
+      left: 200px;
+      @include md {
+        position: initial;
+      }
+    }
+  }
+  &-ado {
+    &_image {
+      position: relative;
+      top: 70px;
+      left: 100px;
+      @include md {
+        position: initial;
+      }
+    }
+    @include blockTherapies(0 10% 0 0, $green);
+  }
+  &-child {
+    &_image {
+      position: relative;
+      left: 200px;
+      @include md {
+        position: initial;
+      }
+    }
+    @include blockTherapies(0 0 0 10%, $grey);
+  }
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding-top: 20px;
+}
