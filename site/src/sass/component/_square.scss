@@ -23,5 +23,10 @@
     }
     &-apropos{
         @include square($green);
+        &_text{
+            text-align: justify;
+           margin-bottom: 20px;
+        }
     }
+    
 }

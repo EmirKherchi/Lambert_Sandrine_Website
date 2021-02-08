@@ -2,10 +2,12 @@
   &_title {
     margin-bottom: 50px;
     margin-top: 50px;
+    
   }
   &_text {
     p {
       padding: $direction;
+      text-align: justify;
       line-height: 20px;
       strong {
         font-weight: 600;
