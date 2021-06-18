@@ -56,7 +56,7 @@ function sendEmail() {
             }
 
             emailjs
-              .send("site_email","siteemail",form,"user_G7KIV6oN96ksI8HoFjWqM")
+              .send("default_service","template_wi40o0j",form,"user_1K2AL2xJFv9joNmqPKwjo")
               .then(
                 function () {
                   thanks();
